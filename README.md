@@ -1,5 +1,5 @@
 # H1B Employer Checker  
-<mg src="screen-recording" width="500">
+<img src="img/screen-recording" width="500">
 ## Description / Rationale  
 This repository contains the source code for a **Google Chrome extension** that simplifies the process of checking H1B employer data. It demonstrates how to integrate and interact with databases within a Chrome extension.  
 
