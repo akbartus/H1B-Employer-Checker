@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "H-1B Employer Checker",
+  "icons": {
+    "128": "h1bemployer.png"
+  },
+  "version": "1.0",
+  "description": "The extension shows if an employer has been H-1B sponsor",
+  "permissions": ["scripting", "activeTab"],
+  "content_security_policy": {
+  "extension_pages": "script-src 'self'; object-src 'self'"
+},
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.glassdoor.com/Job/*", "https://www.google.com/*","https://jobs.ashbyhq.com/*"
+      ],
+      "js": ["sql-wasm.js", "content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["dataset.db", "sql-wasm.wasm"],
+      "matches": [ "https://www.glassdoor.com/*", "https://www.google.com/*", "https://ashbyhq.com/*"]
+    }
+  ]
+}
