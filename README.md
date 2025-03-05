@@ -1,7 +1,7 @@
 # H1B Employer Checker  
 <img src="img/screen-recording.gif">
 
-## Description / Rationale  
+### Description / Rationale  
 This repository contains the source code for a **Google Chrome extension** that simplifies the process of checking H1B employer data. It demonstrates how to integrate and interact with databases within a Chrome extension.  
 
 The extension currently supports searching using **Google Search** and **Glassdoor Jobs**:  
@@ -11,6 +11,6 @@ The extension currently supports searching using **Google Search** and **Glassdo
 
 Additionally, this project covers **most of the essential scenarios involved in creating a Chrome extension**, serving as a valuable reference for developers.  
 
-## Tech Stack  
+### Tech Stack  
 - **SQL.js (Portable SQLite)** – Enables client-side database functionality.  
 - **Data Source:** The database was created based on the data from the [H1B Employer Data Hub](https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub).
